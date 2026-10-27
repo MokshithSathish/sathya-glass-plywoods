@@ -242,3 +242,18 @@ h1 em, h2 em { color: #d9ad83; font-weight: 500; }
         font-size: 2rem;
     }
 }
+/* Remove decorative GLASS and PLYWOODS background text */
+.hero::before,
+.hero::after,
+.hero-section::before,
+.hero-section::after {
+    content: none !important;
+    display: none !important;
+}
+/* Remove background text elements if they exist */
+.hero .hero-bg-text,
+.hero .background-text,
+.hero .hero-decoration,
+.hero .hero-watermark {
+    display: none !important;
+}
